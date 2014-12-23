@@ -26,10 +26,10 @@ class action_plugin_captchalogin extends DokuWiki_Action_Plugin {
     }     
     
     /**
-       Redirect with additional parameters if captcha fails
-              do=logout : to force logout
-              capt=r : to identify on reload that the captcha has failed
-      Output captcha plugin's 'testfailed' message if capatcha failed test                
+     *   Redirect with additional parameters if captcha fails
+     *         do=logout : to force logout
+     *         capt=r : to identify on reload that the captcha has failed
+     *  Output captcha plugin's 'testfailed' message if capatcha failed test                
     */
    function handle_act_preprocess(&$event, $param) {         
            
