@@ -1,0 +1,7 @@
+base  captchalogin
+author  Myron Turner
+email  turnermm02@shaw.ca
+date  2014-12-23
+name  captchalogin
+desc  add captcha to login dialog 
+url   http://www.mturner.org/
