@@ -15,13 +15,13 @@ class action_plugin_captchalogin extends DokuWiki_Action_Plugin {
     
       /**
         *      Insert captcha into login form 
-        *       insert chk=captchs_check parameter to identify our login with captcha
+        *      chk=captcha_check parameter to identify our login with captcha
       */
     function handle_login_form(&$event, $param) {   
     	$pos = $event->data->findElementByAttribute('type', 'submit');      
         $helper = plugin_load('helper', 'captcha');
          if($helper === null) {
-            msg('The captchlogin plugin needs the captcha plugin', -1);
+            msg('The captchalogin plugin needs the captcha plugin', -1);
             $this->captcha_installed=false;
             return;
         }
